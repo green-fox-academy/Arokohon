@@ -36,7 +36,6 @@ public class VariableMutation
         }
 
         int h = 135798745;
-        if ()
 
     }
 }
