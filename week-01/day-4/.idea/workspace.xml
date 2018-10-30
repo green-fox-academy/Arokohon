@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5bf37d6-0533-4e3f-bec9-1fac72d4b700" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PrintParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintParams.java" afterDir="false" />
-    </list>
+    <list default="true" id="e5bf37d6-0533-4e3f-bec9-1fac72d4b700" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,22 +19,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3528" />
+          <entry key="java" value="3680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3528" />
+          <entry key="JAVA" value="3680" />
         </counts>
       </usages-collector>
     </session>
@@ -44,10 +42,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Third.java">
+        <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="267">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PrintParams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -76,6 +83,7 @@
         <option value="$PROJECT_DIR$/src/Sum.java" />
         <option value="$PROJECT_DIR$/src/PrintParams.java" />
         <option value="$PROJECT_DIR$/src/Third.java" />
+        <option value="$PROJECT_DIR$/src/CompareLength.java" />
       </list>
     </option>
   </component>
@@ -119,7 +127,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540914871620" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540915686105" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -135,9 +143,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Third">
-    <configuration name="AppendAFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppendAFunc" />
+  <component name="RunManager" selected="Application.CompareLength">
+    <configuration name="CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompareLength" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,19 +188,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Doubling" />
-      <item itemvalue="Application.AppendAFunc" />
       <item itemvalue="Application.Sum" />
       <item itemvalue="Application.Factorio" />
       <item itemvalue="Application.PrintParams" />
       <item itemvalue="Application.Third" />
+      <item itemvalue="Application.CompareLength" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CompareLength" />
         <item itemvalue="Application.Third" />
         <item itemvalue="Application.PrintParams" />
         <item itemvalue="Application.Sum" />
         <item itemvalue="Application.Factorio" />
-        <item itemvalue="Application.AppendAFunc" />
       </list>
     </recent_temporary>
   </component>
@@ -206,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540889553880</updated>
-      <workItem from="1540889555583" duration="20815000" />
+      <workItem from="1540889555583" duration="21631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20815000" />
+    <option name="totallyTimeSpent" value="21631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
@@ -306,6 +314,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Third.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -313,10 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Third.java">
+    <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="267">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
