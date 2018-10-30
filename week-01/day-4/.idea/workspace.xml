@@ -19,22 +19,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="30" />
+          <entry key="java" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3680" />
+          <entry key="java" value="3750" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3680" />
+          <entry key="JAVA" value="3750" />
         </counts>
       </usages-collector>
     </session>
@@ -42,19 +42,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
+        <entry file="file://$PROJECT_DIR$/src/SumElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PrintParams.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -84,6 +75,7 @@
         <option value="$PROJECT_DIR$/src/PrintParams.java" />
         <option value="$PROJECT_DIR$/src/Third.java" />
         <option value="$PROJECT_DIR$/src/CompareLength.java" />
+        <option value="$PROJECT_DIR$/src/SumElements.java" />
       </list>
     </option>
   </component>
@@ -127,7 +119,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540915686105" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540915901574" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -143,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CompareLength">
+  <component name="RunManager" selected="Application.SumElements">
     <configuration name="CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompareLength" />
       <module name="day-4" />
@@ -153,13 +145,6 @@
     </configuration>
     <configuration name="Doubling" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Doubling" />
-      <module name="day-4" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Factorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Factorio" />
       <module name="day-4" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,6 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SumElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SumElements" />
+      <module name="day-4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Third" />
       <module name="day-4" />
@@ -189,18 +181,18 @@
     <list>
       <item itemvalue="Application.Doubling" />
       <item itemvalue="Application.Sum" />
-      <item itemvalue="Application.Factorio" />
       <item itemvalue="Application.PrintParams" />
       <item itemvalue="Application.Third" />
       <item itemvalue="Application.CompareLength" />
+      <item itemvalue="Application.SumElements" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumElements" />
         <item itemvalue="Application.CompareLength" />
         <item itemvalue="Application.Third" />
         <item itemvalue="Application.PrintParams" />
         <item itemvalue="Application.Sum" />
-        <item itemvalue="Application.Factorio" />
       </list>
     </recent_temporary>
   </component>
@@ -214,12 +206,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540889553880</updated>
-      <workItem from="1540889555583" duration="21631000" />
+      <workItem from="1540889555583" duration="21835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21631000" />
+    <option name="totallyTimeSpent" value="21835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
@@ -321,6 +313,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -328,10 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
+    <entry file="file://$PROJECT_DIR$/src/SumElements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
