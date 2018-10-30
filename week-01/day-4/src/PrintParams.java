@@ -4,7 +4,7 @@ public class PrintParams {
 
         String[] szavak = {"egy", "kettő", "három"};
         printParams(szavak);
-        
+
 //        printParams("first", "second", "third");
 
     }
