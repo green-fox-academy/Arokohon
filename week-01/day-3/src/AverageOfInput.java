@@ -27,5 +27,4 @@ public class AverageOfInput {
 
         return sum;
     }
-
 }
