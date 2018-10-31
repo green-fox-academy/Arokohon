@@ -27,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="25" />
+          <entry key="java" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4433" />
+          <entry key="java" value="4699" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4433" />
+          <entry key="JAVA" value="4699" />
         </counts>
       </usages-collector>
     </session>
@@ -67,11 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OddEven.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
               <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OneTwoALot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -121,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/MileToKmConverter.java" />
         <option value="$PROJECT_DIR$/src/AverageOfInput.java" />
         <option value="$PROJECT_DIR$/src/OddEven.java" />
+        <option value="$PROJECT_DIR$/src/OneTwoALot.java" />
       </list>
     </option>
   </component>
@@ -131,8 +141,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="571" />
-    <option name="width" value="802" />
+    <option name="x" value="626" />
+    <option name="width" value="747" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -164,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540986164252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540986903638" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -181,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OddEven">
+  <component name="RunManager" selected="Application.OneTwoALot">
     <configuration name="AnimalsAndLegs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnimalsAndLegs" />
       <module name="181029" />
@@ -191,13 +201,6 @@
     </configuration>
     <configuration name="AverageOfInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AverageOfInput" />
-      <module name="181029" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloUser" />
       <module name="181029" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,20 +220,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OneTwoALot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OneTwoALot" />
+      <module name="181029" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.HelloUser" />
       <item itemvalue="Application.MileToKmConverter" />
       <item itemvalue="Application.AnimalsAndLegs" />
       <item itemvalue="Application.AverageOfInput" />
       <item itemvalue="Application.OddEven" />
+      <item itemvalue="Application.OneTwoALot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OneTwoALot" />
         <item itemvalue="Application.OddEven" />
         <item itemvalue="Application.AverageOfInput" />
         <item itemvalue="Application.AnimalsAndLegs" />
         <item itemvalue="Application.MileToKmConverter" />
-        <item itemvalue="Application.HelloUser" />
       </list>
     </recent_temporary>
   </component>
@@ -247,18 +257,17 @@
       <workItem from="1540810722642" duration="17673000" />
       <workItem from="1540889287336" duration="234000" />
       <workItem from="1540973294660" duration="761000" />
-      <workItem from="1540978224036" duration="6839000" />
+      <workItem from="1540978224036" duration="7562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25507000" />
+    <option name="totallyTimeSpent" value="26230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="571" y="0" width="802" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="626" y="0" width="747" height="735" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26010782" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2809316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -427,6 +436,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OneTwoALot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
