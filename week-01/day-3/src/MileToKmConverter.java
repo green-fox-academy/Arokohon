@@ -9,7 +9,6 @@ public class MileToKmConverter {
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
 
-        
         System.out.println("The distance in miles: " + (userInput * 0.62) + ".");
     }
 }
