@@ -14,7 +14,7 @@ public class DrawTriangle {
             System.out.println(star);
             star = star + starInc;
             }
-            
+
         }
 
     }
