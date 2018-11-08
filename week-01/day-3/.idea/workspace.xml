@@ -22,7 +22,7 @@
     <session id="-1088940651">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
@@ -123,7 +123,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ParametricAverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="374">
               <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
@@ -241,8 +241,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541691472637" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541691474743" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../week-02/day-2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -331,16 +331,15 @@
       <workItem from="1541518689852" duration="1912000" />
       <workItem from="1541533143222" duration="88000" />
       <workItem from="1541583929253" duration="45000" />
-      <workItem from="1541667575564" duration="16444000" />
+      <workItem from="1541667575564" duration="16609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52375000" />
+    <option name="totallyTimeSpent" value="52540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="498" y="0" width="875" height="735" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17300613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -351,7 +350,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40099832" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40099832" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ParametricAverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="374">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
