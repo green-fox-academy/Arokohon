@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bf37d6-0533-4e3f-bec9-1fac72d4b700" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../day-3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-3/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DiagonalMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DiagonalMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/AnimalsAndLegs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/AverageOfInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/Bmi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/CodingHours.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/ConditionValuableMutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/CountFromTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/DefineBasicInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/FavoriteNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/HelloOther.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/HelloUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/HumptyDumpty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/IWontCheatOnTheExams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/Integers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/IntroduceMyself.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/MileToKmConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/MultiplicationTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/OddEven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/OneTwoALot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/PartyIndicator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/PrintBigger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/PrintEven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/PrintValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/SecondsInADay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/Swap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/TwoNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-3/out/production/181029/VariableMutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-02/day-1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week-02/day-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,23 +45,23 @@
     <session id="-1285454155">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="54" />
+          <entry key="java" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="54" />
+          <entry key="JAVA" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,7 +80,17 @@
     <favorites_list name="day-4" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppendAFunc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,13 +167,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541495477138" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Arokohon.github.io/week-02/day-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -230,16 +268,17 @@
       <workItem from="1540974133327" duration="2906000" />
       <workItem from="1540997933724" duration="291000" />
       <workItem from="1541494541393" duration="1437000" />
+      <workItem from="1541583976182" duration="125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32029000" />
+    <option name="totallyTimeSpent" value="32154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.12783661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987593" visible="true" weight="0.12934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -326,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppendAFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ChangeElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -385,10 +417,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/asd.java">
+    <entry file="file://$PROJECT_DIR$/src/asd.java" />
+    <entry file="file://$PROJECT_DIR$/src/AppendAFunc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>

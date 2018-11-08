@@ -10,7 +10,7 @@ public class DrawTriangle {
         String star = "*";
         String starInc = "*";
 
-        for (int i = 1; i <= a; i++){
+        for (int i = 0; i < a; i++){
             System.out.println(star);
             star = star + starInc;
             }
