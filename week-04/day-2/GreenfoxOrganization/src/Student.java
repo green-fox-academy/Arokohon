@@ -21,7 +21,7 @@ public class Student extends Person {
 
   public void introduce() {
     super.introduce();
-    System.out.println("from " + previousOrganization + "who skipped " + skippedDays + "days from the course already.");
+    System.out.println(" from " + previousOrganization + " who skipped " + skippedDays + " days from the course already.");
   }
 
   public int skipDays(int numberOfDays) {

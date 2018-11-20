@@ -14,7 +14,7 @@ public class Mentor extends Person {
 
   public void introduce() {
     super.introduce();
-    System.out.println(" " + level + "mentor.");
+    System.out.println(" " + level + " mentor.");
   }
 
   public void getGoal() {
