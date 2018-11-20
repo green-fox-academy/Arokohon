@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Cohort {
 
-  String name = "";
+  String name;
   List<Student> students;
   List<Mentor> mentors;
 
@@ -22,6 +22,6 @@ public class Cohort {
   }
 
   public void info() {
-    System.out.println("The " + " cohort has " + students.size() + " students and " + mentors.size() + " mentors.");
+    System.out.println("The " + name + " cohort has " + students.size() + " students and " + mentors.size() + " mentors.");
   }
 }

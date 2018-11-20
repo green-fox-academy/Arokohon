@@ -9,7 +9,7 @@ public class Student extends Person {
     skippedDays = 0;
   }
 
-  Student(String name, int age, String gender, String previousOrganization, int skippedDays) {
+  Student(String name, int age, String gender, String previousOrganization) {
     super(name, age, gender);
     this.previousOrganization = previousOrganization;
     this.skippedDays = skippedDays;

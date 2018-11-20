@@ -6,13 +6,11 @@ public class Sponsor extends Person {
   Sponsor() {
     super();
     company = "Google";
-    hiredStudents = 0,
   }
 
-  Sponsor(String name, int age, String gender, String company, int hiredStudents) {
+  Sponsor(String name, int age, String gender, String company) {
     super(name, age, gender);
     this.company = company;
-    this.hiredStudents = hiredStudents;
   }
 
   public void introduce() {
@@ -20,7 +18,7 @@ public class Sponsor extends Person {
     System.out.println(" who represents " + company + " and hired " + hiredStudents + " students so far.");
   }
 
-  public int hire(int hiredStudents) {
+  public int hire() {
     return hiredStudents += 1;
   }
 
