@@ -19,7 +19,7 @@ public class Carrier {
   public void fill() throws Exception {
     if (ammoForFill > 0) {
       for (int i = 0; i < listOfPlanes.size(); i++) {
-        if (listOfPlanes.get(i).priority == true) {
+        if (listOfPlanes.get(i).isPriority()) {
           listOfPlanes.get(i).refill(ammoForFill);
         }
       }
@@ -41,9 +41,20 @@ public class Carrier {
   }
 
   public String getCarrierStatus() {
-    return "HP: " + this.health
-        + " Aircraft count: " + listOfPlanes.size()
-        + " Ammo storage: " + this.ammoForFill
-        + " Total damage: " + getTotalDamage();
+    if (this.health > 0) {
+      return "HP: " + this.health
+          + " Aircraft count: " + listOfPlanes.size()
+          + " Ammo storage: " + this.ammoForFill
+          + " Total damage: " + getTotalDamage();
+    }
+    return "It's dead Jim... :(";
+  }
+
+  public int fight(Carrier enemyCarrier) {
+    enemyCarrier.health -= getTotalDamage();
+    for (int i = 0; i < listOfPlanes.size(); i++) {
+      listOfPlanes.get(i).fight();
+    }
+    return enemyCarrier.health;
   }
 }
