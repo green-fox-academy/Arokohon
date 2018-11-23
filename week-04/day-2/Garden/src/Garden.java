@@ -25,9 +25,13 @@ public class Garden {
   public void getGardenStatus() {
     for (int i = 0; i < listOfPlants.size(); i++) {
       if (listOfPlants.get(i).waterLevel < listOfPlants.get(i).minWaterLevel) {
-        System.out.println(listOfPlants.get(i).type + " " + listOfPlants.get(i).color + " need water!");
+        System.out.println(listOfPlants.get(i).type + " "
+            + listOfPlants.get(i).color + " need water! Waterlevel: "
+            + listOfPlants.get(i).waterLevel);
       } else {
-        System.out.println(listOfPlants.get(i).type + " " + listOfPlants.get(i).color + " doesn't need water!");
+        System.out.println(listOfPlants.get(i).type + " "
+            + listOfPlants.get(i).color + " doesn't need water!Waterlevel: "
+            + listOfPlants.get(i).waterLevel);
       }
     }
   }

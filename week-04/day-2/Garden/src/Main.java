@@ -15,9 +15,13 @@ public class Main {
     theGarden.listOfPlants.add(new Tree("Tree", "orange"));
 
     theGarden.getGardenStatus();
+    System.out.println();
     theGarden.wateringPlant(40);
+    System.out.println();
     theGarden.getGardenStatus();
+    System.out.println();
     theGarden.wateringPlant(70);
+    System.out.println();
     theGarden.getGardenStatus();
   }
 }
