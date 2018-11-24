@@ -11,8 +11,11 @@ public class Ship {
     shipCrew.get((int)Math.random() * shipCrew.size()).isCaptain = true;
   }
 
-
   public void getShipStatus(Ship ship) {
+    for (int i = 0; i < shipCrew.size(); i++) {
+      if (shipCrew.get(i).isCaptain) {
 
+      }
+    }
   }
 }
