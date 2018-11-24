@@ -11,5 +11,4 @@ public class Animal {
         this.hunger ++;
         this.thirst ++;
     }
-
 }
