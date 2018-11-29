@@ -1,5 +1,6 @@
+import java.util.ArrayList;
+
 public interface DoBattle {
 
-  void battle(Ship enemyShip);
-
+  public void battle(Ship enemyShip);
 }

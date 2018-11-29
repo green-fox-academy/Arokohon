@@ -1,21 +1,13 @@
-public class Pirate extends Person implements Fightable, Randomize{
+public class Pirate extends Person implements Randomize{
 
   int maxDrinks;
-  boolean isConcious;
   int drinkedRums;
-  boolean hasParrot;
 
   public Pirate() {
     super();
     this.maxDrinks = 4;
     this.isConcious = true;
     this.drinkedRums = 0;
-    this.hasParrot = false;
-  }
-
-  @Override
-  public void fight(Person opponent) {
-
   }
 
   public int drinkSomeRum() {
@@ -30,20 +22,8 @@ public class Pirate extends Person implements Fightable, Randomize{
         System.out.println("Pour me anudder!");
       }
     } else {
-      this.isConcious = false;
+      this.ko();
       System.out.println("Arghh, I'ma Pirate. How d'ya d'ink its goin?");
     }
-  }
-
-  @Override
-  public int randomNumberForFight() {
-    int number = (1 + (int)(Math.random() * 3));
-    return number;
-  }
-
-  @Override
-  public int randomNumberForLife() {
-    int number = (1 + (int)(Math.random() * 5));
-    return number;
   }
 }

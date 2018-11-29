@@ -1,4 +1,4 @@
-public class Marine extends Person implements Fightable{
+public class Marine extends Person implements Randomize{
 
   int minWages;
   int actualWage;
@@ -6,21 +6,24 @@ public class Marine extends Person implements Fightable{
 
   public Marine() {
     super();
-    this.minWages = 3;
+    this.minWages = 2;
     this.actualWage = 0;
     this.isMutinous = false;
   }
 
-  @Override
-  public void fight(Person opponent) {
-
-  }
-
   public void getWages() {
-
+    this.actualWage++;
   }
 
-  public void wereIsMyWagesCaptain() {
+  public void wereIsMyWages() {
 
+    if (this.actualWage < this.minWages) {
+      this.beMutinous();
+      System.out.println("Hmpf, you are my Captain? NOOOOO!!!!");
+    }
+  }
+
+  public boolean beMutinous() {
+    return this.isMutinous = true;
   }
 }
