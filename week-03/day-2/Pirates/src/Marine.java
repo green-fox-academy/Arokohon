@@ -1,4 +1,4 @@
-public class Marine extends Person {
+public class Marine extends Person implements Fightable{
 
   int minWages = 3;
   int actualWage = 0;
