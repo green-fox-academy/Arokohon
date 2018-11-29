@@ -1,7 +1,7 @@
 public abstract class Person {
 
-  boolean isAlive;
-  boolean isConcious;
-  int power;
-  boolean isCaptain;
+  String type;
+  boolean isAlive = true;
+
+  public abstract void fight(Person opponent);
 }

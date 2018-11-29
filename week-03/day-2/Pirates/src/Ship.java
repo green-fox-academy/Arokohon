@@ -1,21 +1,9 @@
 import java.util.ArrayList;
 
-public class Ship {
+public abstract class Ship {
 
-  ArrayList<Pirate> shipCrew = new ArrayList<>();
+  ArrayList<Object> crew;
 
-  public void fillShip() {
-    for (int i = 0; i < 10 + (int)Math.random() * 26; i++) {
-      shipCrew.add(new Pirate());
-    }
-    shipCrew.get((int)Math.random() * shipCrew.size()).isCaptain = true;
-  }
-
-  public void getShipStatus(Ship ship) {
-    for (int i = 0; i < shipCrew.size(); i++) {
-      if (shipCrew.get(i).isCaptain) {
-
-      }
-    }
-  }
+  public abstract void battle(Ship enemyShip);
+  public abstract void getCrew();
 }
