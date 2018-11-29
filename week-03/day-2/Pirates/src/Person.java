@@ -1,5 +1,5 @@
 public abstract class Person {
 
-  String type;
   boolean isAlive = true;
+  boolean isCaptain = false;
 }

@@ -1,8 +1,15 @@
 public class Marine extends Person implements Fightable{
 
-  int minWages = 3;
-  int actualWage = 0;
-  boolean isMutinous = false;
+  int minWages;
+  int actualWage;
+  boolean isMutinous;
+
+  public Marine() {
+    super();
+    this.minWages = 3;
+    this.actualWage = 0;
+    this.isMutinous = false;
+  }
 
   @Override
   public void fight(Person opponent) {
@@ -13,7 +20,7 @@ public class Marine extends Person implements Fightable{
 
   }
 
-  public void wereIsMyWageCaptain() {
+  public void wereIsMyWagesCaptain() {
 
   }
 }

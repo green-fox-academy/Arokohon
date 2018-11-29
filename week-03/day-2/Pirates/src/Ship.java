@@ -5,4 +5,6 @@ public abstract class Ship {
   ArrayList<Object> crew;
 
   public abstract void getCrew();
+
+  public abstract void getStatus();
 }
