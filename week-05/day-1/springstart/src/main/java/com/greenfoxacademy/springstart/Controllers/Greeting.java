@@ -1,17 +1,18 @@
 package com.greenfoxacademy.springstart.Controllers;
 
-import org.springframework.web.bind.annotation.RequestParam;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class Greeting {
 
   private String name;
   private long id;
+  private static AtomicLong idCounter = new AtomicLong(1);
   private String content;
 
   public Greeting(String name, String content, long id) {
     this.name = name;
     this.content = content;
-    this.id = id;
+    this.id = idCounter.getAndIncrement();
   }
 
   public String getName() {
