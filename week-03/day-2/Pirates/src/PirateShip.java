@@ -1,15 +1,20 @@
 import java.util.ArrayList;
 
-public class PirateShip extends Ship implements DoBattle, Ceremony, Randomize{
+public class PirateShip extends Ship implements Ceremony, DoBattle, Randomize {
 
-  ArrayList<Pirate> crewOfShip = new ArrayList<>();
+  ArrayList<Pirate> crewOfShip;
+
+  public PirateShip() {
+    super();
+    this.crewOfShip = new ArrayList<>();
+  }
 
   public void fillShip() {
     for (int i = 0; i < randomNumberForLife(); i++) {
       Pirate pirate = new Pirate();
-      crewOfShip.add(pirate);
+      this.crewOfShip.add(pirate);
     }
-    crewOfShip.get(0).isCaptain = true;
+    this.crewOfShip.get(0).isCaptain = true;
   }
 
   @Override
@@ -28,16 +33,33 @@ public class PirateShip extends Ship implements DoBattle, Ceremony, Randomize{
     return number;
   }
 
+//  Not finished, have to refacturing - maybe OutOfBounds Error (j) + don't see, if
+// enemy isAlive, or isConcious!!!
   @Override
-  public void battle(Ship enemyShip) {
-    for (int i = 0; i < crewOfShip.size(); i++)
-      if (crewOfShip.get(i).isAlive && crewOfShip.get(i).isConcious) {
-        crewOfShip.get(i).fight((Person) enemyShip.crew.get(i));
+  public void attackingHMSShip(HMSShip enemyShip) {
+    for (int i = 0; i < crewOfShip.size(); i++) {
+      while (!crewOfShip.get(i).isAlive || !crewOfShip.get(i).isConcious) {
+        for (int j = 0; j < enemyShip.crewOfShip.size(); j++) {
+          crewOfShip.get(i).fight(enemyShip.crewOfShip.get(j));
+        }
       }
+    }
   }
 
   @Override
-  public void getStatus() {
+  public String getStatus() {
 
+    for (int i = 0; i < this.crewOfShip.size(); i++) {
+      int alivePirates = 0;
+      if (crewOfShip.get(i).isAlive) {
+        alivePirates++;
+      }
+    }
+    return "the captain had " + this.crewOfShip.get(0).drinkedRums;
+  }
+
+
+  @Override
+  public void attackingPirateShip(PirateShip ship) {
   }
 }

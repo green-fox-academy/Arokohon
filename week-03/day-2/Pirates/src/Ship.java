@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public abstract class Ship {
 
-  ArrayList<Object> crew;
-  public abstract void getStatus();
+  boolean isVictoriuos = false;
+
+  public abstract String getStatus();
 }
