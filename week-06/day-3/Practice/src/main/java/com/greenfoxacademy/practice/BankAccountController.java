@@ -22,4 +22,10 @@ public class BankAccountController {
     model.addAttribute("bankAccounts", bankAccounts);
     return "index";
   }
+
+  @RequestMapping(path = "/htmlception", method = RequestMethod.GET)
+  public String showHtmlCeption(Model model) {
+    model.addAttribute("htmlception", "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>");
+    return "htmlception";
+  }
 }
