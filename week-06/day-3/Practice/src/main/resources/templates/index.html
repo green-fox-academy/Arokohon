@@ -6,6 +6,12 @@
     <meta charset="utf-8" />
 </head>
 <body>
-
+<div>
+    <div th:each="bankAccount : ${bankAccounts}">
+        <span th:text="'Account owner: ' + ${bankAccount.getName()} + ' | Balance: ' +
+        ${#numbers.formatDecimal(bankAccount.getBalance(), 1, 'COMMA', 2, 'POINT')} + ' ' +
+        ${bankAccount.getCurrency()} + ' | Species: ' + ${bankAccount.getAnimalType()}"></span>
+    </div>
+</div>
 </body>
 </html>
