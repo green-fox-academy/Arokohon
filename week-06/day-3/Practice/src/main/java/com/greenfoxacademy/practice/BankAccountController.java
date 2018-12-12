@@ -15,11 +15,16 @@ public class BankAccountController {
 
   public BankAccountController() {
     bankAccounts.add(new BankAccount("Simba", 2000, "SAFARI", "lion"));
+    bankAccounts.add(new BankAccount("Timon", 600, "SAFARI", "meerkats"));
+    bankAccounts.add(new BankAccount("Pumba", 400, "SAFARI", "boar"));
+    bankAccounts.add(new BankAccount("Mufasa", 6000, "SAFARI", "lion"));
+    bankAccounts.add(new BankAccount("Zordon", 9500, "SAFARI", "lion"));
+    bankAccounts.add(new BankAccount("Rafiki", 8000, "SAFARI", "baboon"));
   }
 
   @RequestMapping(path = "/show", method = RequestMethod.GET)
   public String showBankAccounts(Model model) {
-    model.addAttribute("bankAccounts", bankAccounts);
+    model.addAttribute("bankAccount", bankAccounts);
     return "index";
   }
 
@@ -27,5 +32,11 @@ public class BankAccountController {
   public String showHtmlCeption(Model model) {
     model.addAttribute("htmlception", "This is an <em>HTML</em> text. <b>Enjoy yourself!</b>");
     return "htmlception";
+  }
+
+  @RequestMapping(path = "/list", method = RequestMethod.GET)
+  public String showAccounts(Model model) {
+    model.addAttribute("allaccounts", bankAccounts);
+    return "accountlist";
   }
 }
