@@ -14,12 +14,18 @@ public class BankAccountController {
   private List<BankAccount> bankAccounts = new ArrayList<>();
 
   public BankAccountController() {
-    bankAccounts.add(new BankAccount("Simba", 2000, "SAFARI", "lion"));
-    bankAccounts.add(new BankAccount("Timon", 600, "SAFARI", "meerkats"));
-    bankAccounts.add(new BankAccount("Pumba", 400, "SAFARI", "boar"));
-    bankAccounts.add(new BankAccount("Mufasa", 6000, "SAFARI", "lion"));
-    bankAccounts.add(new BankAccount("Scar", 9500, "SAFARI", "lion"));
-    bankAccounts.add(new BankAccount("Rafiki", 8000, "SAFARI", "baboon"));
+    bankAccounts.add(new BankAccount
+        ("Simba", "Prince", 2000, "SAFARI", "lion", true));
+    bankAccounts.add(new BankAccount
+        ("Timon", "Unemployed", 600, "SAFARI", "meerkats", true));
+    bankAccounts.add(new BankAccount
+        ("Pumba", "Jester",400, "SAFARI", "boar", true));
+    bankAccounts.add(new BankAccount
+        ("Mufasa", "King",6000, "SAFARI", "lion", true));
+    bankAccounts.add(new BankAccount
+        ("Scar", "Usurper",9500, "SAFARI", "lion", false));
+    bankAccounts.add(new BankAccount
+        ("Rafiki", "Smart ass",8000, "SAFARI", "baboon", true));
   }
 
   @RequestMapping(path = "/show", method = RequestMethod.GET)

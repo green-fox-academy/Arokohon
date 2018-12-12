@@ -8,9 +8,10 @@
 <body>
 <div>
     <div th:each="account : ${allaccounts}">
-        <span th:text="${account.getId()} + ' ' + 'Account owner: ' + ${account.getName()} + ' | Balance: ' +
-        ${#numbers.formatDecimal(account.getBalance(), 1, 'COMMA', 2, 'POINT')} + ' ' +
-        ${account.getCurrency()} + ' | Species: ' + ${account.getAnimalType()}"></span>
+        <span th:text="${account.getId()} + ' ' + 'Account owner: ' + ${account.getName()} + ' | Title: ' +
+        ${account.getTitle()} + ' | Balance: ' + ${#numbers.formatDecimal(account.getBalance(), 1, 'COMMA', 2, 'POINT')} +
+        ' ' + ${account.getCurrency()} + ' | Species: ' + ${account.getAnimalType()} + ' | ' + ${account.goodOrBad()}">
+        </span>
     </div>
 </div>
 </body>
