@@ -18,7 +18,7 @@ public class BankAccountController {
     bankAccounts.add(new BankAccount("Timon", 600, "SAFARI", "meerkats"));
     bankAccounts.add(new BankAccount("Pumba", 400, "SAFARI", "boar"));
     bankAccounts.add(new BankAccount("Mufasa", 6000, "SAFARI", "lion"));
-    bankAccounts.add(new BankAccount("Zordon", 9500, "SAFARI", "lion"));
+    bankAccounts.add(new BankAccount("Scar", 9500, "SAFARI", "lion"));
     bankAccounts.add(new BankAccount("Rafiki", 8000, "SAFARI", "baboon"));
   }
 
