@@ -1,0 +1,31 @@
+package com.greenfox.connectionwithmysql.controllers;
+
+import com.greenfox.connectionwithmysql.repositories.ToDoRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(value = "/todo")
+public class TodoController {
+
+  public static ToDoRepo todorepo;
+
+  @Autowired
+  public TodoController(ToDoRepo todorepo) {
+    this.todorepo = todorepo;
+  }
+
+  @GetMapping(value = "/list")
+  public String list(Model model) {
+    return "todolist";
+  }
+
+  @GetMapping(value = "/findall")
+  public String findAll(Model model) {
+    model.addAttribute("todos", todorepo.findAll());
+    return "todolist";
+  }
+}
