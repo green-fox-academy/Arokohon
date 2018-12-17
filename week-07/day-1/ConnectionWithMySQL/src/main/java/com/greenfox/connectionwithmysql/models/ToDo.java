@@ -1,4 +1,4 @@
-package com.greenfox.connectionwithmysql.repositories;
+package com.greenfox.connectionwithmysql.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,11 +16,11 @@ public class ToDo {
   private boolean isUrgent;
   private boolean isDone;
 
-  public ToDo(String name) {
+  public ToDo(String name, boolean urgent, boolean done) {
     this.name = name;
     this.id = id;
-    this.isDone = false;
-    this.isUrgent = false;
+    this.isDone = done;
+    this.isUrgent = urgent;
   }
 
   public ToDo() {
