@@ -22,4 +22,10 @@ public class TodoController {
   public String list(Model model) {
     return "todolist";
   }
+
+  @GetMapping(value = "/findall")
+  public String findAll(Model model) {
+    model.addAttribute("todos", todorepo.findAll());
+    return "todolist";
+  }
 }
