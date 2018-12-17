@@ -1,4 +1,4 @@
-package com.greenfox.listing_todos_with_h2.repository;
+package com.greenfox.listing_todos_with_h2.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +21,9 @@ public class ToDo {
     this.id = id;
     this.isDone = false;
     this.isUrgent = false;
+  }
+
+  public ToDo() {
   }
 
   public int getId() {
