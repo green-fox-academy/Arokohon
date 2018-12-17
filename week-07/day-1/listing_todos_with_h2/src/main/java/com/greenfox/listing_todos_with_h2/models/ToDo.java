@@ -1,8 +1,14 @@
 package com.greenfox.listing_todos_with_h2.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class ToDo {
 
+  @Id
   private int id;
+
   private String name;
   private boolean isUrgent;
   private boolean isDone;
