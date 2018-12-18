@@ -1,6 +1,5 @@
 package com.greenfox.connectionwithmysql;
 
-import com.greenfox.connectionwithmysql.models.ToDo;
 import com.greenfox.connectionwithmysql.repositories.ToDoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -23,8 +22,6 @@ public class ConnectionwithmysqlApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    todolist.save(new ToDo("Refactoring 3rd task", false));
-    todolist.save(new ToDo("Wake up", true));
   }
 }
 

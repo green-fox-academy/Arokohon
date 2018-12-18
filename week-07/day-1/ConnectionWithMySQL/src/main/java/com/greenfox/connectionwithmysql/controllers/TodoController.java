@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -20,7 +22,7 @@ public class TodoController {
   }
 
   @GetMapping(value = "/")
-  public String list(Model model) {
+  public String list() {
     return "todolist";
   }
 
@@ -31,8 +33,14 @@ public class TodoController {
   }
 
   @GetMapping(value = "/add")
-  public String addTodo(Model model) {
+  public String addTodoForm(Model model) {
     model.addAttribute("todo", new ToDo());
     return "addtodo";
+  }
+
+  @PostMapping(value = "/add")
+  public String addTodo(@ModelAttribute ToDo todo) {
+    todolist.addNewTodo(todo);
+    return "redirect: /";
   }
 }

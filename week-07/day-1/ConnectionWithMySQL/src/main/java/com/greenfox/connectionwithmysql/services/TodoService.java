@@ -33,4 +33,8 @@ public class TodoService {
     });
     return activeTodos;
   }
+
+  public void addNewTodo(ToDo todo) {
+    this.toDoRepo.save(todo);
+  }
 }
