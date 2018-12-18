@@ -1,5 +1,6 @@
 package com.greenfox.connectionwithmysql.controllers;
 
+import com.greenfox.connectionwithmysql.models.ToDo;
 import com.greenfox.connectionwithmysql.services.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,5 +28,11 @@ public class TodoController {
   public String findActives(Model model) {
     model.addAttribute("alltodos", todolist.getActiveToDos());
     return "todolist";
+  }
+
+  @GetMapping(value = "/add")
+  public String addTodo(Model model) {
+    model.addAttribute("todo", new ToDo());
+    return "addtodo";
   }
 }

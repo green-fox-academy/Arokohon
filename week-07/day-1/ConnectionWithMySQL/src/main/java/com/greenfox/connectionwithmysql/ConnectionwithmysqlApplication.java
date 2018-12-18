@@ -23,8 +23,8 @@ public class ConnectionwithmysqlApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    todolist.save(new ToDo("Refactoring 3rd task", false, false));
-    todolist.save(new ToDo("Wake up", true, true));
+    todolist.save(new ToDo("Refactoring 3rd task", false));
+    todolist.save(new ToDo("Wake up", true));
   }
 }
 

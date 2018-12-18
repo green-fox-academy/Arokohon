@@ -9,17 +9,17 @@ import javax.persistence.Id;
 public class ToDo {
 
   @Id
-  @GeneratedValue(strategy= GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private int id;
 
   private String name;
   private boolean isUrgent;
   private boolean isDone;
 
-  public ToDo(String name, boolean urgent, boolean done) {
+  public ToDo(String name, boolean urgent) {
     this.name = name;
     this.id = id;
-    this.isDone = done;
+    this.isDone = false;
     this.isUrgent = urgent;
   }
 
