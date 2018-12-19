@@ -30,31 +30,15 @@ public class ToDo {
     return id;
   }
 
-  public void setId(int id) {
-    this.id = id;
-  }
-
   public String getName() {
     return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
   }
 
   public boolean isUrgent() {
     return isUrgent;
   }
 
-  public void setUrgent(boolean urgent) {
-    isUrgent = urgent;
-  }
-
   public boolean isDone() {
     return isDone;
-  }
-
-  public void setDone(boolean done) {
-    isDone = done;
   }
 }
