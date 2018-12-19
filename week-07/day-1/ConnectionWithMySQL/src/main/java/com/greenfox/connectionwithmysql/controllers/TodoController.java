@@ -41,6 +41,6 @@ public class TodoController {
   @PostMapping(value = "/add")
   public String addTodo(@ModelAttribute ToDo todo) {
     todolist.addNewTodo(todo);
-    return "redirect: /";
+    return "redirect:/todo/";
   }
 }

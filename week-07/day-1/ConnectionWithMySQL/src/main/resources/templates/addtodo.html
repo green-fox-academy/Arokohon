@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Add new todo to the list:</h1>
-    <form method="post" th:action="@{/add}" th:object="${todo}">
+    <form method="post" th:action="@{/todo/add}" th:object="${todo}">
         <div>
             <label for="title">Name of task: </label>
             <input id="title" name="title" th:field="*{name}"><br>
