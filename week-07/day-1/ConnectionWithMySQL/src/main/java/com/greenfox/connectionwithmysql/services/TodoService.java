@@ -37,4 +37,12 @@ public class TodoService {
   public void addNewTodo(ToDo todo) {
     this.toDoRepo.save(todo);
   }
+
+  public void deleteToDoById(int id) {
+    toDoRepo.deleteById(id);
+  }
+
+  public ToDo getToDoById(int id) {
+    return toDoRepo.findById(id).orElse(null);
+  }
 }

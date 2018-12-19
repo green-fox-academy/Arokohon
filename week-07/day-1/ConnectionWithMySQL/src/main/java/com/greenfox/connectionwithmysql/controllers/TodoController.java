@@ -5,10 +5,7 @@ import com.greenfox.connectionwithmysql.services.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(value = "/todo")
@@ -22,7 +19,8 @@ public class TodoController {
   }
 
   @GetMapping(value = "/")
-  public String list() {
+  public String list(Model model) {
+    model.addAttribute("alltodos", todolist.getToDos());
     return "todolist";
   }
 
@@ -41,6 +39,24 @@ public class TodoController {
   @PostMapping(value = "/add")
   public String addTodo(@ModelAttribute ToDo todo) {
     todolist.addNewTodo(todo);
+    return "redirect:/todo/";
+  }
+
+  @PostMapping(value = "/{id}/delete")
+  public String deleteToDo(@PathVariable int id) {
+    todolist.deleteToDoById(id);
+    return "redirect:/todo/";
+  }
+
+  @GetMapping(value = "/{id}/edit")
+  public String editToDoForm(Model model, @PathVariable int id) {
+    model.addAttribute("todo", todolist.getToDoById(id));
+    return "edittodo";
+  }
+
+  @PostMapping(value = "/{id}/edit")
+  public String editToDo(@ModelAttribute ToDo toDo) {
+    todolist.addNewTodo(toDo);
     return "redirect:/todo/";
   }
 }
