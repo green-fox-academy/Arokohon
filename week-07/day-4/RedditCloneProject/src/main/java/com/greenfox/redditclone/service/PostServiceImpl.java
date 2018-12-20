@@ -27,21 +27,21 @@ public class PostServiceImpl implements PostService {
 
   @Override
   public Post getPostById(long id) {
-    return null;
+    return repository.findById(id).orElse(null);
   }
 
   @Override
   public void addPost(Post post) {
-
+    repository.save(post);
   }
 
   @Override
   public void editPost(Post post) {
-
+    repository.save(post);
   }
 
   @Override
   public void deletePostById(long id) {
-
+    repository.deleteById(id);
   }
 }
