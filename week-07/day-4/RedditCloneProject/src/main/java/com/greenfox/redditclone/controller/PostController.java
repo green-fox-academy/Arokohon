@@ -17,7 +17,7 @@ public class PostController {
     this.service = service;
   }
 
-  @GetMapping
+  @GetMapping("/")
   public String mainPage( Model model) {
     model.addAttribute("posts", service.getPosts());
     return "index";
