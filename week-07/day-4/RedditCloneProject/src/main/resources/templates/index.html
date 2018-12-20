@@ -21,38 +21,24 @@
 <div class="container">
     <div class="flexgrid">
         <div class="colmain animated fadeInLeft">
-            <div class="post">
-                <div class="postbuttons">
-                    <img src="./images/upvote.png">
-                    <h2>97</h2>
-                    <img src="./images/downvote.png">
+            <th:block th:object="${post}" th:each="post : ${posts}">
+                <div class="post">
+                    <div class="postbuttons">
+                        <a th:href="@{/{id}/upvote(id=*{postId})}"><img src="./images/upvote.png"></a>
+                        <h2 th:text="*{vote}"></h2>
+                        <a th:href="@{/{id}/downvote(id=*{postId})}"><img src="./images/downvote.png"></a>
+                    </div>
+                    <div class="posttext">
+                        <h1><a th:text="*{title}" th:href="*{url}"></a></h1>
+                        <a class="source" href="http://gfa.com"> (greenfoxacademy.com)</a><br>
+                        <span class="submdate">submitted 4 days ago by</span>
+                        <a class="submitter" href="http://gfa.com">Anonymus</a><br>
+                        <span class="num_comments">61 comments </span>
+                        <a class="modify" th:href="@{/{id}/edit(id=*{postId})}">modify</a>
+                        <a class="remove" href="http://gfa.com">remove</a>
+                    </div>
                 </div>
-                <div class="posttext">
-                    <h1>We should have less lightning talks</h1>
-                    <a class="source" href="http://gfa.com"> (greenfoxacademy.com)</a><br>
-                    <span class="submdate">submitted 4 days ago by</span>
-                    <a class="submitter" href="http://gfa.com">Anonymus</a><br>
-                    <span class="num_comments">61 comments </span>
-                    <a class="modify" href="http://gfa.com">modify </a>
-                    <a class="remove" href="http://gfa.com">remove</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="postbuttons">
-                    <img src="./images/upvote.png">
-                    <h2>46</h2>
-                    <img src="./images/downvote.png">
-                </div>
-                <div class="posttext">
-                    <h1>Cucli is the best</h1>
-                    <a class="source" href="http://cucli.com"> (greenfoxacademy.com)</a><br>
-                    <span class="submdate">submitted 6 days ago by</span>
-                    <a class="submitter" href="http://cucli.com">Anonymus</a><br>
-                    <span class="num_comments">93 comments </span>
-                    <a class="modify" href="http://cucli.com">modify </a>
-                    <a class="remove" href="http://cucli.com">remove</a>
-                </div>
-            </div>
+            </th:block>
         </div>
         <div class="colinfo animated fadeInRight">
             <div class="info">

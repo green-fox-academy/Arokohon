@@ -11,4 +11,6 @@ public interface PostService {
   void addPost(Post post);
   void editPost(Post post);
   void deletePostById(long id);
+  void editVoteByIdUp(Post post);
+  void editVoteByIdDown(Post post);
 }

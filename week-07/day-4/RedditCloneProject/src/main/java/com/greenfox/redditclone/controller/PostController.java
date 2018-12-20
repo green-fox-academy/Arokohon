@@ -23,6 +23,22 @@ public class PostController {
     return "index";
   }
 
+  @GetMapping("/{id}/upvote")
+  public String upVote(@PathVariable long id) {
+    Post post = service.getPostById(id);
+    service.editVoteByIdUp(post);
+    service.addPost(post);
+    return "redirect:/";
+  }
+
+  @GetMapping("/{id}/downvote")
+  public String downVote(@PathVariable long id) {
+    Post post = service.getPostById(id);
+    service.editVoteByIdDown(post);
+    service.addPost(post);
+    return "redirect:/";
+  }
+
   @GetMapping("/submit")
   public String addPost(Model model) {
     model.addAttribute("post", new Post());
@@ -38,10 +54,10 @@ public class PostController {
   @GetMapping("/{id}/edit")
   public String editPost(@PathVariable long id, Model model) {
     model.addAttribute("post", service.getPostById(id));
-    return "edit-post";
+    return "edit";
   }
 
-  @PutMapping("/{id}/edit")
+  @PostMapping("/{id}/edit")
   public String editPost(@ModelAttribute("post") Post post) {
     service.editPost(post);
     return "redirect:/";
