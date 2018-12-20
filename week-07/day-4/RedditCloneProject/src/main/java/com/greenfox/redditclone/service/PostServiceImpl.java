@@ -1,17 +1,28 @@
 package com.greenfox.redditclone.service;
 
-import com.greenfox.redditclone.model.Post;
+import com.greenfox.redditclone.repository.Post;
+import com.greenfox.redditclone.repository.PostRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class PostServiceImpl implements PostService{
+public class PostServiceImpl implements PostService {
 
+  private PostRepository repository;
+
+  @Autowired
+  PostServiceImpl(PostRepository repository) {
+    this.repository = repository;
+  }
 
   @Override
   public List<Post> getPosts() {
-    return null;
+    List<Post> posts = new ArrayList<>();
+    repository.findAll().forEach(posts::add);
+    return posts;
   }
 
   @Override
@@ -25,7 +36,7 @@ public class PostServiceImpl implements PostService{
   }
 
   @Override
-  public void editPost(long id) {
+  public void editPost(Post post) {
 
   }
 

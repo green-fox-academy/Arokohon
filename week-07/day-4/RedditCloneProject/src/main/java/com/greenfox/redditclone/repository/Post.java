@@ -1,4 +1,4 @@
-package com.greenfox.redditclone.model;
+package com.greenfox.redditclone.repository;
 
 import java.util.Date;
 import javax.persistence.Entity;

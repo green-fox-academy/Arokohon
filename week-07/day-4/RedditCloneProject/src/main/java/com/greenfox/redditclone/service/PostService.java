@@ -1,6 +1,6 @@
 package com.greenfox.redditclone.service;
 
-import com.greenfox.redditclone.model.Post;
+import com.greenfox.redditclone.repository.Post;
 
 import java.util.List;
 
@@ -9,6 +9,6 @@ public interface PostService {
   List<Post> getPosts();
   Post getPostById(long id);
   void addPost(Post post);
-  void editPost(long id);
+  void editPost(Post post);
   void deletePostById(long id);
 }
