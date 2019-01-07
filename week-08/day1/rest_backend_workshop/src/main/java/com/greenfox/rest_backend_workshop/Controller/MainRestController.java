@@ -20,4 +20,10 @@ public class MainRestController {
   public Object doubling(@RequestParam(value = "input", required = false) Integer number) {
     return service.doubling(number);
   }
+
+  @GetMapping("/greeter")
+  public Object greeter(@RequestParam(value = "name", required = false) String name,
+                        @RequestParam(value = "title", required = false) String title) {
+    return service.greeting(name, title);
+  }
 }
