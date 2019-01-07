@@ -8,7 +8,7 @@ public class Greeting {
   public Greeting(String name, String title) {
     this.name = name;
     this.title = title;
-    this.welcome_message = "Oh, hy there " + name + ", my dear " + title + "!";
+    this.welcome_message = "Oh, hi there " + name + ", my dear " + title + "!";
   }
 
   public Greeting() {

@@ -1,5 +1,6 @@
 package com.greenfox.rest_backend_workshop.Service;
 
+import com.greenfox.rest_backend_workshop.Repository.AppendA;
 import com.greenfox.rest_backend_workshop.Repository.ErrorMessage;
 import com.greenfox.rest_backend_workshop.Repository.Greeting;
 import org.springframework.stereotype.Service;
@@ -25,5 +26,9 @@ public class Services {
     } else {
       return new Greeting(name, title);
     }
+  }
+
+  public AppendA addingA(String word) {
+    return new AppendA(word);
   }
 }

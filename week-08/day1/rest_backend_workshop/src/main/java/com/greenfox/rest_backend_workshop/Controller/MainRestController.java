@@ -3,6 +3,7 @@ package com.greenfox.rest_backend_workshop.Controller;
 import com.greenfox.rest_backend_workshop.Service.Services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,5 +26,10 @@ public class MainRestController {
   public Object greeter(@RequestParam(value = "name", required = false) String name,
                         @RequestParam(value = "title", required = false) String title) {
     return service.greeting(name, title);
+  }
+
+  @GetMapping("/appenda/{appendable}")
+  public Object appendA(@PathVariable String appendable) {
+    return service.addingA(appendable);
   }
 }
