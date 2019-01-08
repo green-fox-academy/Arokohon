@@ -1,11 +1,10 @@
 package com.greenfox.rest_backend_workshop.Controller;
 
+import com.greenfox.rest_backend_workshop.Repository.DoUntil;
+import com.greenfox.rest_backend_workshop.Repository.JsonObject;
 import com.greenfox.rest_backend_workshop.Service.Services;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MainRestController {
@@ -31,5 +30,11 @@ public class MainRestController {
   @GetMapping("/appenda/{appendable}")
   public Object appendA(@PathVariable String appendable) {
     return service.addingA(appendable);
+  }
+
+  @PostMapping("/dountil/{action}")
+  public DoUntil doUntil(@PathVariable String action,
+                         @RequestBody JsonObject jsonObject) {
+    return service.DoUntilNum(action, jsonObject.getUntil());
   }
 }
