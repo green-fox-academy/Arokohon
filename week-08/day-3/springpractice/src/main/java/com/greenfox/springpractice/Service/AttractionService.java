@@ -8,5 +8,5 @@ public interface AttractionService {
 
   Iterable<Attraction> getAttractions();
   void addAttraction(Attraction attraction);
-  void editAttraction(Attraction attraction);
+  Attraction findById(Long id);
 }

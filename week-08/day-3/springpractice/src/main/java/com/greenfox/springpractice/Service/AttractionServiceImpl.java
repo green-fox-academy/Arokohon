@@ -5,8 +5,6 @@ import com.greenfox.springpractice.Repository.AttractionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class AttractionServiceImpl implements AttractionService {
 
@@ -28,7 +26,7 @@ public class AttractionServiceImpl implements AttractionService {
   }
 
   @Override
-  public void editAttraction(Attraction attraction) {
-
+  public Attraction findById(Long id) {
+    return repository.findById(id).orElse(null);
   }
 }

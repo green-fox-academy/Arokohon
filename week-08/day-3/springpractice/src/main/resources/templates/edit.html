@@ -7,7 +7,7 @@
     <title>Attraction finder</title>
 </head>
 <body>
-<form th:method="post" th:action="@{/add}" th:object="${newAttraction}">
+<form th:method="post" th:action="@{/edit}" th:object="${editAttraction}">
     <label>Name</label>
     <input type="text" required th:field="*{name}">
     <label>City</label>
