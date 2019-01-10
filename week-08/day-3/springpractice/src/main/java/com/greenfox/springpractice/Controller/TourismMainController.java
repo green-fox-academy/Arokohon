@@ -27,7 +27,7 @@ public class TourismMainController {
 
   @GetMapping("/")
   public String mainPage(Model model) {
-    model.addAttribute("newAttractions", service.getAttractions());
+    model.addAttribute("newAttraction", new Attraction());
     return "index";
   }
 
