@@ -3,9 +3,11 @@ package com.greenfox.aliasapp.Service;
 import com.greenfox.aliasapp.Model.Alias;
 import com.greenfox.aliasapp.Repository.AliasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AliasServiceImpl implements AliasService{
 
   @Autowired
@@ -18,7 +20,7 @@ public class AliasServiceImpl implements AliasService{
 
   @Override
   public void saveAlias(Alias alias) {
-
+    repository.save(alias);
   }
 
   @Override

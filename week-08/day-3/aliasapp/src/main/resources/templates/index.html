@@ -8,11 +8,11 @@
 </head>
 <body>
     <form th:method="post" th:action="@{/save-link}">
-        <label>URL</label>
-        <input th:type="text" name="url">
-        <label>Alias</label>
-        <input type="text" name="alias">
-        <button th:type="submit">Submit</button>
+        <label for="url">URL</label>
+        <input id="url" type="text" name="url" th:value="${newAlias.url}">
+        <label for="alias">Alias</label>
+        <input id="alias" type="text" name="alias" th:value="${newAlias.alias}">
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
