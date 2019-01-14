@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OrderRepository extends CrudRepository<foodOrder, Long> {
+
+  boolean existsById(Long id);
 }

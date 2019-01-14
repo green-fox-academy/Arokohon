@@ -35,7 +35,12 @@ public class OrderController {
 
   @GetMapping("/order/{id}")
   public String showNewOrder(@PathVariable("id") Long id, Model model) {
-    model.addAttribute("foodOrder", service.getOrderById(id));
-    return "order-accepted";
+    if (service.existsById(id)) {
+      model.addAttribute("foodOrder", service.getOrderById(id));
+      return "order-accepted";
+    } else {
+      model.addAttribute("error", "Order on id: " + id + " does not exist.");
+      return "error";
+    }
   }
 }

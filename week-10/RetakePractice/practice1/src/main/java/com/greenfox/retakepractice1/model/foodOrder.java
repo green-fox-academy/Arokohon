@@ -15,6 +15,7 @@ public class foodOrder {
   private String address;
   private String base;
   private String topping;
+  private String status;
 
   public foodOrder() {
   }
@@ -57,5 +58,13 @@ public class foodOrder {
 
   public void setTopping(String topping) {
     this.topping = topping;
+  }
+
+  public String getStatus() {
+    return status;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
   }
 }
