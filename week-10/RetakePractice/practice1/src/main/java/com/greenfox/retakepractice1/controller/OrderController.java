@@ -1,6 +1,6 @@
 package com.greenfox.retakepractice1.controller;
 
-import com.greenfox.retakepractice1.model.foodOrder;
+import com.greenfox.retakepractice1.model.FoodOrder;
 import com.greenfox.retakepractice1.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,12 +22,12 @@ public class OrderController {
 
   @GetMapping("/")
   public String index(Model model) {
-    model.addAttribute("foodOrder", new foodOrder());
+    model.addAttribute("foodOrder", new FoodOrder());
     return "index";
   }
 
   @PostMapping("/order")
-  public String addOrder(foodOrder foodOrder, RedirectAttributes redir) {
+  public String addOrder(FoodOrder foodOrder, RedirectAttributes redir) {
     service.addOrder(foodOrder);
     redir.addAttribute("id", foodOrder.getId());
     return "redirect:/order/{id}";

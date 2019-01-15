@@ -1,12 +1,18 @@
 package com.greenfox.retakepractice1.service;
 
-import com.greenfox.retakepractice1.model.foodOrder;
+import com.greenfox.retakepractice1.model.FoodOrder;
 
 public interface OrderService {
 
-  void addOrder(foodOrder foodOrder);
+  void addOrder(FoodOrder foodOrder);
 
-  foodOrder getOrderById(Long id);
+  FoodOrder getOrderById(Long id);
 
   boolean existsById(Long id);
+
+  Iterable<FoodOrder> findByStatus(String status);
+
+  Iterable<FoodOrder> findByStatusAndTopping(String status, String topping);
+
+  void updateOrderStatusById(Long id, String status);
 }

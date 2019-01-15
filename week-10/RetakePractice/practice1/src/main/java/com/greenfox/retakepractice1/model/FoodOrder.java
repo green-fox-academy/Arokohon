@@ -1,23 +1,26 @@
 package com.greenfox.retakepractice1.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class foodOrder {
+public class FoodOrder {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String name;
+  @JsonIgnore
   private String address;
   private String base;
   private String topping;
   private String status;
 
-  public foodOrder() {
+  public FoodOrder() {
   }
 
   public long getId() {

@@ -10,33 +10,36 @@
     <h3>Welcome to Green Fox Takeout!</h3>
     <h4>Please enter your info and choose your meal!</h4>
 </header>
-<div class="container">
-    <form th:method="post" th:action="@{/order}" th:object="${foodOrder}">
-        <input hidden th:field="*{id}">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" required th:field="*{name}">
-        </div>
-        <div class="form-group">
-            <label>Address</label>
-            <input type="text" required th:field="*{address}">
-        </div>
-        <div class="form-check">
-            <label>Bases</label>
-            <label><input type="radio" name="" th:field="*{base}" value="rice noodles">Rice noodles</label>
-            <label><input type="radio" name="gender" th:field="*{base}" value="egg noodles">Egg noodles</label>
-            <label><input type="radio" name="gender" th:field="*{base}" value="white rice">White rice</label>
-        </div>
-        <div class="form-group">
-            <label>Toppings</label>
-            <select th:field="*{topping}">
-                <option value="chicken">Chicken
-                <option value="beef">Beef
-                <option value="smoked tofu">Smoked tofu
-            </select>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-</div>
+    <div class="container">
+        <form th:method="post" th:action="@{/order}" th:object="${foodOrder}">
+            <input hidden th:field="*{id}">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" required th:field="*{name}">
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" required th:field="*{address}">
+            </div>
+            <div class="form-check">
+                <label>Bases</label>
+                <label><input type="radio" name="" th:field="*{base}" value="rice noodles">Rice noodles</label>
+                <label><input type="radio" name="gender" th:field="*{base}" value="egg noodles">Egg noodles</label>
+                <label><input type="radio" name="gender" th:field="*{base}" value="white rice">White rice</label>
+            </div>
+            <div class="form-group">
+                <label>Toppings</label>
+                <select th:field="*{topping}">
+                    <option value="chicken">Chicken
+                    <option value="beef">Beef
+                    <option value="smoked tofu">Smoked tofu
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
 </body>
 </html>
