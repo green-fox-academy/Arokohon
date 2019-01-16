@@ -1,22 +1,17 @@
 package com.greenfox.practice2.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+public class AliasDto {
 
-@Entity
-public class Alias {
-
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   private String url;
   private String aliasName;
-  private long secretCode;
-  private int hitCount;
+  private long hitCount;
 
-  public Alias() {
+  public AliasDto(long id, String url, String aliasName, long hitCount) {
+    this.id = id;
+    this.url = url;
+    this.aliasName = aliasName;
+    this.hitCount = hitCount;
   }
 
   public long getId() {
@@ -43,19 +38,11 @@ public class Alias {
     this.aliasName = aliasName;
   }
 
-  public long getSecretCode() {
-    return secretCode;
-  }
-
-  public void setSecretCode(long secretCode) {
-    this.secretCode = secretCode;
-  }
-
-  public int getHitCount() {
+  public long getHitCount() {
     return hitCount;
   }
 
-  public void setHitCount(int hitCount) {
+  public void setHitCount(long hitCount) {
     this.hitCount = hitCount;
   }
 }
