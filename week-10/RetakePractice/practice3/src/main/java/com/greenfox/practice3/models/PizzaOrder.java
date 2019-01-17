@@ -1,9 +1,7 @@
 package com.greenfox.practice3.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class PizzaOrder {
@@ -14,6 +12,9 @@ public class PizzaOrder {
   private String name;
   private String address;
   private String pizza;
+
+  @Temporal(TemporalType.TIMESTAMP)
+  private Date orderDate;
 //  private long hitCount;
 
   public PizzaOrder() {
@@ -58,4 +59,12 @@ public class PizzaOrder {
 //  public void setHitCount(long hitCount) {
 //    this.hitCount = hitCount;
 //  }
+
+  public Date getOrderDate() {
+    return orderDate;
+  }
+
+  public void setOrderDate(Date orderDate) {
+    this.orderDate = orderDate;
+  }
 }
