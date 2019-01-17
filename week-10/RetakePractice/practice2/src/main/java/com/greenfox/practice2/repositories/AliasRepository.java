@@ -12,8 +12,8 @@ import javax.transaction.Transactional;
 @Repository
 public interface AliasRepository extends CrudRepository<Alias, Long> {
 
-  boolean aliasExistsByName(String aliasName);
-  Alias findAliasByName(String aliasName);
+  boolean existsAliasByAliasName(String aliasName);
+  Alias findAliasByAliasName(String aliasName);
   void deleteById(Long id);
 
   @Modifying

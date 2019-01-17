@@ -1,5 +1,6 @@
 package com.greenfox.practice2.services;
 
+import static com.greenfox.practice2.services.SecretCodeGenerator.randFourDigitLong;
 import com.greenfox.practice2.models.Alias;
 import com.greenfox.practice2.models.AliasDto;
 import com.greenfox.practice2.repositories.AliasRepository;
@@ -21,6 +22,7 @@ public class AliasServiceImpl implements AliasService{
 
   @Override
   public void addAlias(Alias alias) {
+    alias.setSecretCode(randFourDigitLong());
     repository.save(alias);
   }
 
@@ -36,16 +38,16 @@ public class AliasServiceImpl implements AliasService{
 
   @Override
   public boolean aliasExistsByName(String aliasName) {
-    return repository.aliasExistsByName(aliasName);
+    return repository.existsAliasByAliasName(aliasName);
   }
 
   @Override
   public Alias findAliasByName(String aliasName) {
-    return repository.findAliasByName(aliasName);
+    return repository.findAliasByAliasName(aliasName);
   }
 
   public void incHitCount(String aliasName) {
-    repository.incHitCount(repository.findAliasByName(aliasName).getId());
+    repository.incHitCount(repository.findAliasByAliasName(aliasName).getId());
   }
 
   public AliasDto tranformAlias(Alias alias) {
