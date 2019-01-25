@@ -4,6 +4,7 @@ import com.greenfox.jwt_practice.security.JwtAuthenticationEntryPoint;
 import com.greenfox.jwt_practice.security.JwtAuthenticationProvider;
 import com.greenfox.jwt_practice.security.JwtAuthenticationTokenFilter;
 import com.greenfox.jwt_practice.security.JwtSuccessHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,7 +23,9 @@ import java.util.Collections;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class JtwSecurityConfig extends WebSecurityConfigurerAdapter {
 
+  @Autowired
   private JwtAuthenticationProvider authenticationProvider;
+  @Autowired
   private JwtAuthenticationEntryPoint entryPoint;
 
   @Bean
@@ -48,9 +51,7 @@ public class JtwSecurityConfig extends WebSecurityConfigurerAdapter {
         .exceptionHandling().authenticationEntryPoint(entryPoint)
         .and()
         .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
     http.addFilterBefore(authenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-
     http.headers().cacheControl();
   }
 }

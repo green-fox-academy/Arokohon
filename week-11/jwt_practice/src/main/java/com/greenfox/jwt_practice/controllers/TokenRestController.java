@@ -1,6 +1,7 @@
 package com.greenfox.jwt_practice.controllers;
 
 import com.greenfox.jwt_practice.models.JwtUser;
+import com.greenfox.jwt_practice.security.JwtGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/token")
 public class TokenRestController {
 
-  private TokenRestController jwtGenerator;
+  private JwtGenerator jwtGenerator;
 
   @Autowired
-  public TokenRestController(TokenRestController jwtGenerator) {
+  public TokenRestController(JwtGenerator jwtGenerator) {
     this.jwtGenerator = jwtGenerator;
   }
 
