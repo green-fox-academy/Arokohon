@@ -13,7 +13,7 @@ public class JwtValidator {
 
   public JwtUser validate(String token) {
 
-    JwtUser jwtUser =null;
+    JwtUser jwtUser = null;
     try {
       Claims body = Jwts.parser()
           .setSigningKey(secret)
